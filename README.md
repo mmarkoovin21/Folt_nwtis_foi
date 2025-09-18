@@ -1,9 +1,14 @@
 # Folt_nwtis_foi
-Simulator tvrtke FOLT koja posjeduje franšizu za dostavu hrane i pića iz restorana. Tvrtka svoju franšizu iznajmljuje drugim partnerima. Franšiza uključuje nekoliko vrsta kuhinja (npr. medite-
-ranska, kontinentalna, vegetarijanska, talijanska, kineska i sl.), a pojedini partner može odabrati samu jednu
-od ponuđenih kuhinja prilikom svoje registracije. Ponuda pića je jedinstvena bez obzira na odabranu ku-
-hinju. Tvrtka za svaku vrstu kuhinje priprema jelovnik te zajedničku kartu pića. Svaki partner koji s tvrtkom
-FOLT sklopi ugovor za franšizu dobije svoju identifikacijsku oznaku i sigurnosni kod koji treba koristiti u
-kasnijem radu.
+🏢 FOLT Franchise Management System
+
+Java-based simulator for food delivery franchise operations featuring:
+- Multi-cuisine franchise registration (Mediterranean, Italian, Chinese, etc.)
+- Partner authentication with secure ID/codes  
+- Unified beverage menu across all franchises
+- Restaurant menu management per cuisine type
+
+Built with ![Java SE 23](https://www.oracle.com/java/technologies/javase/jdk23-archive-downloads.html) | ![Maven](https://maven.apache.org/) | ![HSQLDB](https://hsqldb.org/) | ![Payara](https://www.payara.fish/) | ![Jakarta Faces](https://jakarta.ee/specifications/faces/)
 
 _Autor: prof. dr. sc. Dragutin Kermek_
+
+
