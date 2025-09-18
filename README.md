@@ -14,26 +14,31 @@ _Autor: ![prof. dr. sc. Dragutin Kermek_ ](https://www.foi.unizg.hr/hr/djelatnic
 ## Build and run
 
 **It is required to have Java SE 23 edition and Apache Maven installed!**
+
+
 To run project, position yourself in root directory of the project. Run command
-`
+```
 mvn clean install
-`
+```
+
 When all projects compile nad build,some docker configuration is needed. First, make internal docker network runing this command
-`
+
+```
 docker network create --subnet=20.24.5.0/24 mreza_mmarkovin21
-`
+```
 This will create internal subnet with adress 20.24.5.0\24 for all of our containers. You can check if network is created with command `docker network ls`.
+
 After this, create docker volume with command
 
-`
+```
 docker volume create svezak_mmarkovin21
-`
+```
 in whic we'll copy the files from **podaci** folder with this command
-`
+```
 sudo cp podaci/*.* /var/lib/docker/volumes/svezak_mmarkovin21/_data
-`
+```
 
- run docker compose.yaml file
-`
+Finally, run docker compose.yaml file
+```
 docker-compose up --build -d
-`
+```
