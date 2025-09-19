@@ -42,3 +42,20 @@ Finally, run docker compose.yaml file
 ```
 docker-compose up --build -d
 ```
+
+## Frontend (Jakarta Faces)
+
+Install newest version of ![payara web server](https://www.payara.fish/downloads/payara-platform-community-edition/). Unzip the package in `/opt` folder and position yourself inside `/opt/payara6/glassfish/bin`.
+Give premmision to your user using following commands
+```
+sudo chown -R $USER:$USER /opt/payara6
+chmod -R 755 /opt/payara6
+```
+
+and start server with command
+```
+./startserv
+```
+
+
+
