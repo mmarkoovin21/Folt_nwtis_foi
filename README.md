@@ -42,6 +42,9 @@ Finally, run docker compose.yaml file
 ```
 docker-compose up --build -d
 ```
+## Database
+
+Install HSQL datapase to your computer and unzip it to `/opt/` directory. Configure database on your computer using `tablice_HSQLDB.sql` and `tablice_podaci.sql` files. 
 
 ## Frontend (Jakarta Faces)
 
@@ -56,6 +59,10 @@ and start server with command
 ```
 ./startserv
 ```
-
+Position yourself inside clients module ` mmarkovin21_vjezba_08_dz_3_klijenti` and run a deploy command
+```
+mvn cargo:redeploy -P ServerEE-local
+```
+and you're good to go!
 
 
