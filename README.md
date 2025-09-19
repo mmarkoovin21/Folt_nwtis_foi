@@ -44,7 +44,7 @@ docker-compose up --build -d
 ```
 ## Database
 
-Install HSQL datapase to your computer and unzip it to `/opt/` directory. Configure database on your computer using `tablice_HSQLDB.sql` and `tablice_podaci.sql` files. 
+Install ![HSQL datapase](https://sourceforge.net/projects/hsqldb/) to your computer and unzip it to `/opt/` directory. Configure database on your computer using `tablice_HSQLDB.sql` and `tablice_podaci.sql` files. 
 
 ## Frontend (Jakarta Faces)
 
