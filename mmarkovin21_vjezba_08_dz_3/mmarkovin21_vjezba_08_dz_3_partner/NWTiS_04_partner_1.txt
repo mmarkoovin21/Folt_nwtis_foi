@@ -1,0 +1,19 @@
+#NWTiS 2024.
+#Mon May 12 14:01:36 CEST 2025
+adresa=20.24.5.2
+brojCekaca=10
+gpsDuzina=16.34009
+gpsSirina=46.30803
+id=1
+kodZaAdminPartnera=FE98DC76BA54
+kodZaKraj=BABECABACC
+kuhinja=MK
+kvotaNarudzbi=2
+mreznaVrata=8010
+mreznaVrataKraj=8000
+mreznaVrataKrajPartner=8011
+mreznaVrataRad=8002
+mreznaVrataRegistracija=8001
+naziv=FOLT 1 - Varaždin, Pavlinska 9
+pauzaDretve=100
+sigKod=6b5a4711

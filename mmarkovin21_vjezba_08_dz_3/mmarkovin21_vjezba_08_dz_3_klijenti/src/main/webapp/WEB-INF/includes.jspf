@@ -1,0 +1,5 @@
+<%-- includes.jspf --%>
+<% String cp = request.getContextPath(); %>
+<link rel="stylesheet" href="<%= cp %>/resources/css/nwtis.css" />
+<link rel="stylesheet" href="<%= cp %>/resources/css/default.css" />
+<link rel="stylesheet" href="<%= cp %>/resources/css/cssLayout.css" />

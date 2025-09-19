@@ -1,0 +1,54 @@
+version: '3.7'
+
+networks:
+  mreza_mmarkovin21:
+    external: true
+
+volumes:
+  svezak_mmarkovin21:
+    external: true
+
+services:
+  # Tvrtka socket-server
+  tvrtka:
+    build:
+      context: mmarkovin21_vjezba_08_dz_3_tvrtka
+      dockerfile: Dockerfile
+    image: tvrtka_mmarkovin21:latest
+    container_name: tvrtka_mmarkovin21
+    networks:
+      mreza_mmarkovin21:
+        ipv4_address: 20.24.5.2
+    volumes:
+      - svezak_mmarkovin21:/usr/app/podaci
+
+  # REST services (Payara)
+  servis:
+    build:
+      context: mmarkovin21_vjezba_08_dz_3_servisi
+      dockerfile: Dockerfile
+    image: servis_mmarkovin21:latest
+    container_name: servis_mmarkovin21
+    networks:
+      mreza_mmarkovin21:
+        ipv4_address: 20.24.5.20
+    depends_on:
+      - tvrtka
+
+  # Partner socket-server
+  partner:
+    build:
+      context: mmarkovin21_vjezba_08_dz_3_partner
+      dockerfile: Dockerfile
+    image: partner_mmarkovin21:latest
+    container_name: partner_mmarkovin21
+    networks:
+      mreza_mmarkovin21:
+        ipv4_address: 20.24.5.3
+    volumes:
+      - svezak_mmarkovin21:/usr/app/podaci
+    depends_on:
+       - tvrtka
+       - servis
+
+
